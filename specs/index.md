@@ -1,8 +1,8 @@
 # **Product Specification: Savoir-Faire**
 
-**Version:** 1.0
-**Date:** August 1, 2025
-**Status:** Draft
+- **Version:** 1.0
+- **Date:** August 1, 2025
+- **Status:** Draft
 
 ---
 
