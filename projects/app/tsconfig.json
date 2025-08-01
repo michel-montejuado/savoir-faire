@@ -1,4 +1,10 @@
 {
+  "compilerOptions": {
+    // Enforce consistent casing in file names
+    "forceConsistentCasingInFileNames": true,
+    // Enable all strict type-checking options
+    "strict": true
+  },
   "files": [],
   "references": [
     { "path": "./tsconfig.app.json" },
