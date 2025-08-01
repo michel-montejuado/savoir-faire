@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  srcDir: 'src',
   title: "Savoir-Faire's specification",
   description: "The specification website",
   themeConfig: {

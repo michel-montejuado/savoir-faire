@@ -9,3 +9,5 @@ lerna-debug.log*
 # Build directories
 dist/
 
+# Cache directories
+cache/

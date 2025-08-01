@@ -3,23 +3,21 @@
 layout: home
 
 hero:
-  name: "Savoir-Faire's specification"
-  text: "The specification website"
-  tagline: My great project tagline
-  actions:
-    - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
-    - theme: alt
-      text: API Examples
-      link: /api-examples
-
-features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  name: "Savoir-Faire's"
+  text: "Specifications"
+  tagline: "Because you need to know where you're going..."
+#   actions:
+#     - theme: brand
+#       text: Markdown Examples
+#       link: /markdown-examples
+#     - theme: alt
+#       text: API Examples
+#       link: /api-examples
+# features:
+#   - title: Feature A
+#     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+#   - title: Feature B
+#     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+#   - title: Feature C
+#     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
-
