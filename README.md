@@ -8,25 +8,42 @@ A private video knowledge base for your team. Experts easily record how-to guide
 
 This repository contains the full source code for the Savoir-Faire platform, structured as a NodeJS monorepo using **NPM Workspaces**.
 
+## Technology Stack
+
+- **Monorepo**: NPM Workspaces
+- **Backend**: NestJS, TypeScript, PostgreSQL, Prisma
+- **Web Dashboard**: Next.js (React), Tailwind CSS
+- **Web App**: Vite, React, TypeScript
+- **Mobile App**: React Native, Expo (planned)
+- **Testing**: Jest, React Testing Library
+
 ## Monorepo Structure
 
-This project is managed as a monorepo, which allows us to manage dependencies and share code between different parts of the application seamlessly.
+This project is managed as a monorepo, allowing seamless dependency management and code sharing between different parts of the application.
 
 ```text
 savoir-faire/
-├── apps/
-│   ├── mobile/         # React Native App (for Experts & Learners)
-│   └── web-dashboard/  # React Web App (for Administrators)
+├── docs/                # Documentation package
 ├── packages/
-│   ├── server/         # NestJS Backend API & Video Processing
-│   └── shared-types/   # Shared TypeScript types/interfaces
-└── package.json        # Root package.json with workspace configuration
+│   ├── config/          # Shared configuration (TypeScript)
+│   ├── core/            # Shared TypeScript types/interfaces
+│   └── ui/              # Shared UI components (React/React Native)
+├── projects/
+│   ├── app/             # Vite/React web app (for learners/experts)
+│   ├── dashboard/       # Next.js admin dashboard (for administrators)
+│   └── server/          # NestJS backend API & video processing
+├── specs/               # Specification package
+└── package.json         # Root package.json with workspace configuration
 ```
 
-* `apps/mobile`: A React Native application for iOS and Android that allows users to record, upload, and view knowledge videos.
-* `apps/web-dashboard`: A React-based web application for administrators to manage users, content, and view analytics.
-* `packages/server`: The core backend built with NestJS. It handles user authentication, API requests, video processing, and database interactions.
-* `packages/shared-types`: A shared package containing TypeScript types and interfaces used across the server, mobile, and web apps to ensure data consistency.
+- `docs`: Centralized documentation for all apps.
+- `packages/config`: Shared configuration files and utilities.
+- `packages/core`: Shared TypeScript types and interfaces for data consistency.
+- `packages/ui`: Shared UI components for React apps.
+- `projects/app`: Vite/React web app for learners and experts (browser-based usage).
+- `projects/dashboard`: Next.js web dashboard for administrators (user/content management, analytics).
+- `projects/server`: NestJS backend for authentication, API, video processing, and database.
+- `specs`: Centralized specifications for all apps.
 
 ## Getting Started
 
@@ -34,57 +51,57 @@ Follow these instructions to get a copy of the project up and running on your lo
 
 ### Prerequisites
 
-* [Node.js](https://nodejs.org/) (v18.x or later)
-* [NPM](https://www.npmjs.com/) (v9.x or later)
-* [PostgreSQL](https://www.postgresql.org/) (or a Docker instance)
+- [Node.js](https://nodejs.org/) (v18.x or later)
+- [NPM](https://www.npmjs.com/) (v9.x or later)
+- [PostgreSQL](https://www.postgresql.org/) (or a Docker instance)
 
 ### Installation
 
-1.  **Clone the repository:**
+1. **Clone the repository:**
 
-    ```sh
-    git clone [https://github.com/michel-montejuado/savoir-faire.git](https://github.com/your-username/savoir-faire.git)
-    cd savoir-faire
-    ```
+   ```sh
+   git clone [https://github.com/michel-montejuado/savoir-faire.git](https://github.com/your-username/savoir-faire.git)
+   cd savoir-faire
+   ```
 
-2.  **Install dependencies:**
+1. **Install dependencies:**
 
 NPM will automatically install dependencies for all workspaces and link them together.
-    ```sh
-    npm install
-    ```
 
-3.  **Set up environment variables:**
-    Each application (`mobile`, `web-dashboard`, `server`) has a `.env.example` file. Copy these to a new `.env` file in their respective directories and fill in the required values (database credentials, API keys, etc.).
+```sh
+npm install
+```
+
+1. **Set up environment variables:**
+
+Each application (`webapp`, `dashboard`, `server`) has a `.env.example` file. Copy these to a new `.env` file in their respective directories and fill in the required values (database credentials, API keys, etc.).
 
 ```sh
 # Example for the server package
-cp packages/server/.env.example packages/server/.env
+cp apps/server/.env.example apps/server/.env
 ```
 
 ## Running the Project
 
 You can run each part of the application from the root directory using the NPM workspace commands.
 
-* **Run the Backend Server:**
-    ```sh
-    npm run dev --workspace=@savoir-faire/server
-    ```
+- **Run the Backend Server:**
 
-* **Run the Web Dashboard:**
-    ```sh
-    npm run dev --workspace=@savoir-faire/web-dashboard
-    ```
+  ```sh
+  npm run dev --workspace=@savoir-faire/server
+  ```
 
-* **Run the Mobile App:**
-    First, ensure you have the React Native development environment set up. Then, run the appropriate command for your target platform.
-    ```sh
-    # For iOS
-    npm run ios --workspace=@savoir-faire/mobile
+- **Run the Dashboard:**
 
-    # For Android
-    npm run android --workspace=@savoir-faire/mobile
-    ```
+  ```sh
+  npm run dev --workspace=@savoir-faire/dashboard
+  ```
+
+- **Run the WebApp:**
+
+  ```sh
+  npm run dev --workspace=@savoir-faire/webapp
+  ```
 
 ## Running Tests
 
@@ -93,11 +110,3 @@ To run all unit and integration tests across all workspaces, use the following c
 ```sh
 npm test
 ```
-
-## Technology Stack
-
-- Monorepo: NPM Workspaces
-- Backend: NestJS, TypeScript, PostgreSQL, Prisma
-- Web Dashboard: React, Vite, Tailwind CSS
-- Mobile App: React Native, Expo
-- Testing: Jest, React Testing Library

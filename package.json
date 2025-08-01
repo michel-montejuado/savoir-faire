@@ -1,0 +1,41 @@
+{
+  "name": "@savoir-faire/workspace",
+  "description": "A private knowledge base for your team. Experts easily record how-to guides on mobile, making their `savoir-faire` searchable and permanent. Stop knowledge loss, train faster.",
+  "keywords": [
+    "knowledge base",
+    "knowledge management",
+    "how-to guides",
+    "expertise sharing",
+    "team collaboration",
+    "knowledge retention",
+    "training tools",
+    "savoir-faire",
+    "expertise management",
+    "knowledge sharing",
+    "team knowledge"
+  ],
+  "author": "Michel Montejuado",
+  "homepage": "https://github.com/michel-montejuado/savoir-faire#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michel-montejuado/savoir-faire.git"
+  },
+  "bugs": {
+    "url": "https://github.com/michel-montejuado/savoir-faire/issues"
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "license": "UNLICENSED",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "docs",
+    "packages/*",
+    "projects/*",
+    "specs"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

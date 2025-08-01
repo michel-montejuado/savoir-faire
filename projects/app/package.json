@@ -1,0 +1,45 @@
+{
+  "name": "@savoir-faire/app",
+  "description": "The documentation project for Savoir-Faire, a private knowledge base for your team.",
+  "keywords": [
+    "knowledge base",
+    "documentation",
+    "how-to guides",
+    "expertise sharing",
+    "team collaboration",
+    "knowledge retention",
+    "training tools",
+    "savoir-faire",
+    "expertise management",
+    "knowledge sharing",
+    "team knowledge"
+  ],
+  "author": "Michel Montejuado",
+  "license": "UNLICENSED",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.30.1",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "@vitejs/plugin-react-swc": "^3.10.2",
+    "eslint": "^9.30.1",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.20",
+    "globals": "^16.3.0",
+    "typescript": "~5.8.3",
+    "typescript-eslint": "^8.35.1",
+    "vite": "^7.0.4"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "@savoir-faire/docs",
+  "description": "The documentation project for Savoir-Faire, a private knowledge base for your team.",
+  "keywords": [
+    "knowledge base",
+    "documentation",
+    "how-to guides",
+    "expertise sharing",
+    "team collaboration",
+    "knowledge retention",
+    "training tools",
+    "savoir-faire",
+    "expertise management",
+    "knowledge sharing",
+    "team knowledge"
+  ],
+  "author": "Michel Montejuado",
+  "license": "UNLICENSED",
+  "version": "1.0.0",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
+  },
+  "devDependencies": {
+    "vitepress": "^1.6.3",
+    "vue": "^3.5.18"
+  }
+}

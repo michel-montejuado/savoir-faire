@@ -1,0 +1,20 @@
+{
+  "name": "@savoir-faire/config",
+  "description": "The config package for Savoir-Faire, a private knowledge base for your team.",
+  "keywords": [
+    "config",
+    "knowledge base",
+    "how-to guides",
+    "expertise sharing",
+    "team collaboration",
+    "knowledge retention",
+    "training tools",
+    "savoir-faire",
+    "expertise management",
+    "knowledge sharing",
+    "team knowledge"
+  ],
+  "author": "Michel Montejuado",
+  "license": "UNLICENSED",
+  "version": "0.0.0"
+}

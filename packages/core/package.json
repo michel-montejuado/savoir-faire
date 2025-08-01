@@ -1,0 +1,45 @@
+{
+  "name": "@savoir-faire/core",
+  "description": "The core package for Savoir-Faire, a private knowledge base for your team.",
+  "keywords": [
+    "core",
+    "knowledge base",
+    "how-to guides",
+    "expertise sharing",
+    "team collaboration",
+    "knowledge retention",
+    "training tools",
+    "savoir-faire",
+    "expertise management",
+    "knowledge sharing",
+    "team knowledge"
+  ],
+  "author": "Michel Montejuado",
+  "license": "UNLICENSED",
+  "version": "0.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "peerDependencies": {
+    "zod": ">=3.0.0"
+  },
+  "devDependencies": {
+    "@savoir-faire/config": "^0.0.0",
+    "typescript": "^5.0.0"
+  }
+}
