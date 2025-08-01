@@ -26,6 +26,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@savoir-faire/core": "^0.0.0",
+    "@savoir-faire/ui": "^0.0.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   },
